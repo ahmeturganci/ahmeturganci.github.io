@@ -1,0 +1,12 @@
+.sm-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.namearea {
+    margin: 0;
+    font-weight:bold;    
+}
+.title {
+    font-style: italic;
+}
