@@ -17,10 +17,12 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
+  - {file: "trip.md"}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:aahmet.272@gmail.com"}
+  - {title: Twitter, icon: twitter, url: "http://twitter.com/aahmeturganci"}
+  - {title: Instagram, icon: instagram, url: "http://instagram.com/aahmeturganci"}
   - {title: Github, icon: github, url: "https://github.com/ahmeturganci"}
   
 comments:
