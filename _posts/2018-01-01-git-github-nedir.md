@@ -4,6 +4,8 @@
 
 Herkese selam benimde yaklaşım 1.5 yılı aşkın bir süredir kullanmakta olduğum ve her gün yeni yeni şeyler öğrendiğim ve hala çok şey öğrenmem gerektiğini düşündüğüm git tabanlı bir sistem olan github’tan bu yazımda elimden geldiği kadar anlatmaya çalışacağım. Hadi başlayalım,
 
+
+
 <iframe src="https://medium.com/media/2d09630b53f837644e78c911997fb433" frameborder=0></iframe>
 
 ## Git Nedir?
