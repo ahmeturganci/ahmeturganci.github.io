@@ -1,4 +1,8 @@
 
+---
+title: "Welcome to Jekyll"
+layout: post
+---
 
 # Git & GitHub Nedir?
 
