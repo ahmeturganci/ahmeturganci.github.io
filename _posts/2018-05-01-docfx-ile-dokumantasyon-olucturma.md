@@ -2,8 +2,11 @@
 title:  "Docfx ile dokümantasyon oluşturma"
 layout: post
 ---
+
+
 Herkese selam bu yazımda sizlere C, VB gibi dillerde, DocFx kullanarak kod dokümantasyonu nasıl yapılır elimden geldiğince bahsetmeye çalışacağım.
- Hadi başlayalım.
+Hadi başlayalım.
+ 
  <iframe src="https://giphy.com/embed/5AcR8w022Gk4E" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
  
 ### DocFx Nedir?
