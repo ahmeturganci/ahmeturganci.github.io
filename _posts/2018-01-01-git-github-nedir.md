@@ -1,16 +1,11 @@
-
 ---
-title: "Welcome to Jekyll"
+title: "Git & GitHub Nedir?"
 layout: post
 ---
 
-# Git & GitHub Nedir?
-
 Herkese selam benimde yaklaşım 1.5 yılı aşkın bir süredir kullanmakta olduğum ve her gün yeni yeni şeyler öğrendiğim ve hala çok şey öğrenmem gerektiğini düşündüğüm git tabanlı bir sistem olan github’tan bu yazımda elimden geldiği kadar anlatmaya çalışacağım. Hadi başlayalım,
 
-
-
-<iframe src="https://medium.com/media/2d09630b53f837644e78c911997fb433" frameborder=0></iframe>
+<iframe src="https://giphy.com/embed/8752sSo2HbPqE7MN03" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ## Git Nedir?
 
@@ -20,17 +15,17 @@ Yazılım geliştirme süreçlerinde kullanılan, hız odaklı, dağıtık çal�
 
 **1- **Sürüm yönetim kolaylığı projenizi bilgisayarınızda, bir harici diskte yada benzer başka bir alanda tutuyor olalım, projede bir hata yapma veya projenizin başına bir hata/sorun ile karşı karşıya gelmesi gibi durumların olabilmesi yüzünden yedek alma ihtiyacı doğar. Tabi ki proje büyüdükçe bu işlem zahmetli ve karmaşık bir hale gelmeye başlar. İşte tam tepelerin tası atacakken Git tabanlı sistemler imdadımıza yetişiyor ve bu sorunu ortadan kaldırıyor. Git tabanlı sistemlerde projenizin son haline ulaşmanın yanında eski sürümlerine erişebilir önceden ne yapılmış neresi silinip değiştirilmiş gibi bir çok sorunun ortadan kaldırılır.
 
-<iframe src="https://medium.com/media/6e7acd2f0b90327b9f65bd660d51fb9e" frameborder=0></iframe>
+<iframe src="https://giphy.com/embed/vohOR29F78sGk" width="480" height="288" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 **2- **Eş zamanlı & çok kişi ile çalışma Git sayesinde büyük ekipler karışıklık çıkmadan bir arada çalışabiliyor. Bunu yapmasında git tabanlı sistemlerde bulunan kodları birleştirme olayı devreye giriyor bu olaya merge diyoruz.
 
-<iframe src="https://medium.com/media/f4c300c71d4fa15f0e35e52c1b8517cc" frameborder=0></iframe>
+<iframe src="https://giphy.com/embed/cFkiFMDg3iFoI" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 **3-** Çevrimdışı kullanım Git sürüm yönetim sistemleri diğer alakalı sistemlere göre çevrimdışı çalışma özelliği bulunmakta bu özellikte projeyi geliştiren her kullanıcıda projenin bir kopyası bulundukları için internete gerek kalmadan proje geliştirmelerine devam edebilirler.
 
 **4-** Hızlı ve az yer kaplama Github bilgisayarınızda çok az yer kaplamakla birlikte oldukça hızlı çalışırlar.
 
-<iframe src="https://medium.com/media/67a47cc09da71c70bcdc006407313c13" frameborder=0></iframe>
+<iframe src="https://giphy.com/embed/N35rW3vRNeaDC" width="480" height="375" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ## **Git Kurulumu**
 
@@ -43,7 +38,6 @@ Diyerek basit şekilde kurabilirsiniz. [Daha fazla ayrıntı için](https://git-
 
 Windows kurulumu için basit bir videoyuda [burayadan ](https://youtu.be/rrHsdQdC91I)ulaşabilirsiniz.
 
-<iframe src="https://medium.com/media/4f0402208537507761cd43443a092a08" frameborder=0></iframe>
 
 ## Peki Github nedir?
 
@@ -57,4 +51,3 @@ Github’a yazılımcıların sosyal medyası demek hiç yanlış olmaz. gelişt
 
 Evet bu yazımda dilim yettiğince github ve git’ten bahsetmeye çalıştım. İllaki hatam kusurum olur şimdiden affola buralara kadar okuyan herkese çok teşekkürler :D Bir sonraki yazıda görüşmek üzere esen kalın. :)
 
-<iframe src="https://medium.com/media/cd2791c4aca310d1dc5cf7e5e3bbd24f" frameborder=0></iframe>
