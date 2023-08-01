@@ -5,12 +5,8 @@ layout: post
 
 Herkese selam bu yazımda sizlere C, VB gibi dillerde, DocFx kullanarak kod dokümantasyonu nasıl yapılır elimden geldiğince bahsetmeye çalışacağım.
 Hadi başlayalım.
-
-
  
- <iframe src="https://giphy.com/embed/5AcR8w022Gk4E" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
- 
-### DocFx Nedir?
+# DocFx Nedir?
  [**Docfx** ](https://github.com/dotnet/docfx)  .NET projeleri için dokümantasyon oluşturmamızı sağlayan açık kaynak kodlu bir araçtır.
  İlk bakıldığında biraz göz korkutucu olabilir. Bu karışıklığın nedenini içerisinde barındırdığı pek çok özellik kümesi ve dosyalardan kaynaklı olacaktır. Şimdi elimden geldiğince basit bir şekilde anlaşılır hale getirmeye çalışacağım.
 
