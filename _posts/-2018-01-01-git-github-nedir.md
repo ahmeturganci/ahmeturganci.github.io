@@ -1,13 +1,13 @@
 ---
-title: "Git & GitHub Nedir?"
+title:  "Git Github Nedir?"
 layout: post
 ---
+Herkese selam benimde yaklaşım 1.5 yılı aşkın bir süredir kullanmakta olduğum ve her gün yeni yeni şeyler öğrendiğim ve hala çok şey öğrenmem gerektiğini düşündüğüm git tabanlı bir sistem olan github’tan bu yazımda elimden geldiği kadar anlatmaya çalışacağım. Hadi başlayalım
 
-Herkese selam benimde yaklaşım 1.5 yılı aşkın bir süredir kullanmakta olduğum ve her gün yeni yeni şeyler öğrendiğim ve hala çok şey öğrenmem gerektiğini düşündüğüm git tabanlı bir sistem olan github’tan bu yazımda elimden geldiği kadar anlatmaya çalışacağım. Hadi başlayalım,
 
 <iframe src="https://giphy.com/embed/8752sSo2HbPqE7MN03" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-## Git Nedir?
+##  Git Nedir?
 
 Yazılım geliştirme süreçlerinde kullanılan, hız odaklı, dağıtık çalışan bir sürüm kontrol ve kaynak kod yönetim sistemidir. Git sayesinde proje içerisinde bulunan dosyaların gelişimi takip edilebileceği gibi aynı zamanda eski sürümlere kolayca erişilip o sürümler üzerinden değişiklikler yapılabilir.
 
