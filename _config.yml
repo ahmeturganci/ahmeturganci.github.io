@@ -24,6 +24,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Twitter, icon: twitter, url: "http://twitter.com/aahmeturganci"}
   - {title: Instagram, icon: instagram, url: "http://instagram.com/aahmeturganci"}
   - {title: Github, icon: github, url: "https://github.com/ahmeturganci"}
+  - {title: Spotify, icon: spotify, url: "https://open.spotify.com/user/aahmet.272"}
   
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
