@@ -1,6 +1,6 @@
 ---
 title:  "Git Github Nedir?"
-layout: default
 ---
-[Git Github Nedir?](https://ahmeturganci.medium.com/git-github-nedir-1cd2d1c35d45) konusunu elimden geldiğince anlatmaya çalıştığım medium yazım.
+
+<a href="https://ahmeturganci.medium.com/git-github-nedir-1cd2d1c35d45" target="_blank">Git Github Nedir?</a> konusunu elimden geldiğince anlatmaya çalıştığım medium yazım.
 
