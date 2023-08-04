@@ -1,0 +1,58 @@
+.wrap
+  margin: auto
+  margin-left: 6px
+  .timeline
+    list-style: none
+    padding-left: 50px
+    position: relative
+
+    &:before
+      content: ""
+      border-left: 1px solid $line
+      position: absolute
+      left: -1px
+      top: 5px
+      bottom: 5px
+    li
+      padding-bottom: 40px
+      position: relative
+      .line
+        display: flex
+        flex-direction: column
+        border-radius: 10px
+        .job
+          font-weight: bold
+          font-size: 16px
+        .year
+          font-size: 13px
+        .company
+          font-size: 14px
+        .description
+          font-size: 15px
+      &:before
+        content: ""
+        position: absolute
+        width: 9px
+        height: 9px
+        background-color: $line
+        border: 1px solid $line
+        top: 5px
+        left: -56px
+        transition: all 0.2s ease-in-out
+      &:hover:before
+        transform: scale(2)
+        background-color: $white
+        transition: all 0.5s ease
+        transform: rotate(45deg)
+
+.tags
+  .tag
+    display: inline-block
+    border-radius: 3px
+    padding: .2em .5em .3em
+    border-radius: 2px
+    background: var(--tag-bg)
+    color: var(--text-color)
+    background: $line
+    margin: 5px
+    font-weight: 600
