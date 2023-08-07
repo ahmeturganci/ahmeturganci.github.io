@@ -3,8 +3,15 @@
   <ul class="archive">
     {% for post in site.posts %}
     <li>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | date_to_xmlschema }}"
+        >{{ post.date | date: "%Y-%m-%d" }}</time
+      >
+      <h1>ASDASD</h1>
+      {% if post.external_link %}
+        <a href="{{ post.url | relative_url }}" style="color:red !important;">{{ post.title }}</a>
+      {% else %}
+        <a href="{{ post.url | relative_url }}" style="color:green !important;">read more</a>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
