@@ -1,5 +1,20 @@
 <header>
-  <h1><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h1>
+  {% if include.post.show_read_more %}
+  
+  <h1>
+    <a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a>
+  </h1>
+  
+  {% else %}
+  
+  <h1>
+    <a href="{{ include.post.external_url }}" target="_blank">{{ include.post.title }}</a>
+  </h1>
+  
+  {% endif %}
+ 
   {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
+  
   <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }}</time>
+
 </header>
