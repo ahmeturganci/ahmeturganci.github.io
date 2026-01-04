@@ -1,0 +1,10 @@
+# Jekyll/Liquid template dosyaları - Prettier ile uyumsuz
+_includes/menu.html
+_includes/sidebar.html
+_layouts/default.html
+
+# Build klasörü
+_site/
+
+# Dependencies
+node_modules/

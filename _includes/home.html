@@ -1,8 +1,8 @@
 {%- assign posts = paginator.posts | default: site.posts -%} {% for post in
 posts %}
 <article>
-  {% include meta.html post=post preview=true %} {{ post.excerpt }}
-   {% if post.show_read_more %}
+  {% include meta.html post=post preview=true %} {{ post.excerpt }} {% if
+  post.show_read_more %}
   <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
   {% endif %}
 </article>
@@ -15,7 +15,8 @@ posts %}
   <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}<a
     href="{{ paginator.next_page_path | relative_url }}"
-    >older posts »</a>{% else %}<span></span>{% endif %}
+    >older posts »</a
+  >{% else %}<span></span>{% endif %}
 </footer>
 
 {% endif %}

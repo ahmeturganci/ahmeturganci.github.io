@@ -3,9 +3,6 @@ title: "Blog"
 layout: default
 ---
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-  {% include analytics.google.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+{% if site.show_excerpts %} {% include home.html %} {% include
+analytics.google.html %} {% else %} {% include archive.html title="Posts" %} {%
+endif %}
