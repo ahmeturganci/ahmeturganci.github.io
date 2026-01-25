@@ -12,14 +12,16 @@ My personal website and blog built with Jekyll and hosted on GitHub Pages.
 - **Math Support**: KaTeX integration for mathematical equations
 - **Social Links**: Connect via Twitter, Instagram, GitHub, Spotify, and Medium
 - **Timeline**: Professional experience and tech skills showcase
+- **Interactive Travel Map**: Leaflet.js powered map showing visited Turkish provinces
 - **SEO Optimized**: Jekyll SEO Tag plugin for better search engine visibility
 - **Sitemap**: Automatic sitemap generation
 
 ## 🛠️ Tech Stack
 
-- **Jekyll 4.3**: Static site generator
+- **Jekyll 4.2**: Static site generator
 - **SASS**: CSS preprocessor for styling
 - **KaTeX**: Math rendering
+- **Leaflet.js**: Interactive maps
 - **Font Awesome**: Icon library
 - **GitHub Pages**: Hosting
 - **Prettier**: Code formatting
