@@ -1,0 +1,39 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+
+# Indentation
+indent_style = space
+indent_size = 2
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# YAML files
+[*.{yml,yaml}]
+indent_size = 2
+
+# Ruby files
+[*.rb]
+indent_size = 2
+
+# SASS/SCSS files
+[*.{sass,scss}]
+indent_size = 2
+
+# HTML files
+[*.html]
+indent_size = 2
+
+# JavaScript files
+[*.js]
+indent_size = 2

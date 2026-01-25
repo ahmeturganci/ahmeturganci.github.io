@@ -1,3 +1,4 @@
+// Layout Structure
 body
   display: flex
   flex-direction: column
@@ -5,32 +6,40 @@ body
 article
   flex-grow: 1
 
-body > header, body > footer
+// Header & Footer
+body > header, 
+body > footer
   display: flex
   flex-wrap: wrap
   align-items: center
   justify-content: space-between
 
-body > header, body > article, body > footer
+body > header, 
+body > article, 
+body > main,
+body > footer
   padding: 1.5em
 
+// Article Headers
 article header
   margin-bottom: 1.5em
+  
+  h1
+    font-size: 1.7em
+    margin: 0 0 .1em
 
-article header h1
-  font-size: 1.7em
-  margin: 0 0 .1em
-
+// Navigation
 nav
   margin: .5em -1.2em
+  
+  a
+    margin: .5em 1.2em
 
-nav a
-  margin: .5em 1.2em
-
+// Sections
 section
-    line-height: 2em
-    position: relative
-    margin-top: 2em
-    
-section h3 
-    color:orange
+  line-height: 2em
+  position: relative
+  margin-top: 2em
+  
+  h3
+    color: orange

@@ -1,4 +1,6 @@
 @import timeline
+
+// Design Tokens
 $font-size: calc(0.8rem + 0.2vw) !default
 $font-weight: 400 !default
 $font-family: "PT Sans", -apple-system, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif !default
@@ -8,6 +10,6 @@ $link-color: #68f !default
 $dark: #212228 !default
 $light: #ffffff !default
 
-
-@function reduce ($percent)
+// Helper Functions
+@function reduce($percent)
   @return rgba(mix($dark, $light), $percent / 100)

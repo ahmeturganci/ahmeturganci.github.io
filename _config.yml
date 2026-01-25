@@ -1,41 +1,66 @@
+# Site Settings
 title: "🅐🅤"
 author: "Ahmet URGANCI"
 description: "Today is a wonderful day to make a mistake."
+url: "https://ahmeturganci.github.io"
+baseurl: ""
 permalink: /:title/
 lang: "tr"
 excerpt_separator: "\n\n\n"
 date_format: "%d, %B %Y"
 
-# Layout
-show_excerpts: true # show article excerpts on the home page
-show_frame: true # adds a gray frame to the site
-show_sidebar: false # show a sidebar instead of the usual header
-minimal: true # use a dark header
+# Layout Options
+show_excerpts: true     # Show article excerpts on the home page
+show_frame: true        # Adds a gray frame to the site
+show_sidebar: false     # Show a sidebar instead of the usual header
+minimal: true           # Use a dark header
 
-# Menu
-navigation: # accepts {file, title, url, icon, sidebaricon}
+# Navigation Menu
+# Accepts: {file, title, url, icon, sidebaricon}
+navigation:
   - { file: "index.html" }
   - { file: "trip.md" }
   - { file: "blog.html" }
 
-external: # shows a footer with social links - for available icons see fontawesome.com/icons
-  - { title: Twitter, icon: twitter, url: "http://twitter.com/aahmeturganci" }
-  - {
-      title: Instagram,
-      icon: instagram,
-      url: "http://instagram.com/aahmeturganci",
-    }
+# Social Links
+# Shows a footer with social links - for available icons see fontawesome.com/icons
+external:
+  - { title: Twitter, icon: twitter, url: "https://twitter.com/aahmeturganci" }
+  - { title: Instagram, icon: instagram, url: "https://instagram.com/aahmeturganci" }
   - { title: Github, icon: github, url: "https://github.com/ahmeturganci" }
-  - {
-      title: Spotify,
-      icon: spotify,
-      url: "https://open.spotify.com/user/aahmet.272",
-    }
+  - { title: Spotify, icon: spotify, url: "https://open.spotify.com/user/aahmet.272" }
   - { title: Medium, icon: medium, url: "https://ahmeturganci.medium.com/" }
 
+# Comments
+# Uncomment and configure the service you want to use
 comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
+  # disqus_shortname: ""    # See https://disqus.com/
+  # isso_domain: ""         # See https://posativ.org/isso/
 
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+encoding: utf-8
+timezone: Europe/Istanbul
+
+# Jekyll Plugins
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - UNLICENSE.txt

@@ -1,0 +1,33 @@
+{
+  "name": "ahmeturganci-github-io",
+  "version": "2.0.0",
+  "description": "Personal website and blog built with Jekyll",
+  "private": true,
+  "scripts": {
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "JEKYLL_ENV=production bundle exec jekyll build",
+    "clean": "bundle exec jekyll clean",
+    "format": "prettier --write \"**/*.{html,css,scss,sass,js,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{html,css,scss,sass,js,json,md,yml,yaml}\"",
+    "lint:html": "htmlhint \"**/*.html\" --ignore \"_site/**\"",
+    "lint:css": "stylelint \"**/*.{css,scss,sass}\" --ignore-path .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmeturganci/ahmeturganci.github.io"
+  },
+  "keywords": [
+    "jekyll",
+    "blog",
+    "personal-website",
+    "github-pages"
+  ],
+  "author": "Ahmet Urgancı",
+  "license": "Unlicense",
+  "devDependencies": {
+    "prettier": "^3.2.0",
+    "htmlhint": "^1.1.0",
+    "stylelint": "^16.2.0",
+    "stylelint-config-standard-scss": "^13.0.0"
+  }
+}
