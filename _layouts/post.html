@@ -7,7 +7,7 @@ layout: default
   
   {{ content }}
   
-  {% if page.comments != false and site.comments.isso or site.comments.disqus %}
+  {% if page.comments != false %}
     <hr>
     
     {% if site.comments.isso_domain %}
@@ -16,6 +16,16 @@ layout: default
     
     {% if site.comments.disqus_shortname %}
       <div id="disqus_thread"></div>
+    {% endif %}
+    
+    {% if site.comments.utterances.repo %}
+      <script src="https://utteranc.es/client.js"
+              repo="{{ site.comments.utterances.repo }}"
+              issue-term="{{ site.comments.utterances.issue_term | default: 'pathname' }}"
+              theme="{{ site.comments.utterances.theme | default: 'github-light' }}"
+              crossorigin="anonymous"
+              async>
+      </script>
     {% endif %}
     
     <noscript>Please enable JavaScript to view comments.</noscript>

@@ -36,6 +36,10 @@ external:
 comments:
   # disqus_shortname: ""    # See https://disqus.com/
   # isso_domain: ""         # See https://posativ.org/isso/
+  utterances:
+    repo: "ahmeturganci/ahmeturganci.github.io"
+    issue_term: "pathname"
+    theme: "github-light"
 
 # Build Settings
 markdown: kramdown
