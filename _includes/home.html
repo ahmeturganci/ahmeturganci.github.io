@@ -9,6 +9,7 @@
     {% if post.show_read_more %}
       <div class="more">
         <a href="{{ post.url | relative_url }}">read more</a>
+        <span class="comment-count" data-comment-count="{{ post.url }}" style="display:none; margin-left: 10px; color: #666; font-size: 0.9em;"></span>
       </div>
     {% endif %}
   </article>

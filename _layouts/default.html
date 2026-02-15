@@ -66,5 +66,10 @@
       {% include menu.html menu=site.external %}
     </footer>
   {% endif %}
+
+  {%- comment -%} Comment count script for utterances {%- endcomment -%}
+  {% if site.comments.utterances.repo %}
+    <script src="{{ '/assets/js/comment-count.js' | relative_url }}" defer></script>
+  {% endif %}
 </body>
 </html>
