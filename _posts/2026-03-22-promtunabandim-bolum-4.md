@@ -4,7 +4,7 @@ layout: post
 show_read_more: true
 ---
 
-17–22 Mart 2026
+16–22 Mart 2026
 
 Herkese selamlar, ben Ahmet! **Prompt'una Bandım**'ın dördüncü bölümüne hoş geldiniz.
 
