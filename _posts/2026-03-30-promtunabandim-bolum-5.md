@@ -2,144 +2,188 @@
 title: "Prompt'una Bandım - Bölüm 5: Haftanın Yapay Zeka Gündemi"
 layout: post
 show_read_more: true
+series: promptuna-bandim
+episode: 5
+cover_image: /assets/images/promptuna-bandim-05.svg
+cover_alt: "Prompt'una Bandım bölüm 5 kapak görseli"
 ---
 
 Herkese selamlar, ben Ahmet! **Prompt'una Bandım**'ın beşinci bölümüne hoş geldiniz.
 
-*Bu hafta gündem dolup taştı: Google'dan altyapıyı yeniden tanımlayan bir model, OpenAI'dan stratejik bir güvenlik hamlesi, ABD Senatosu'ndan tarihi bir karar, Meta'dan çift duyuru, Adobe'dan yaratıcılara büyük kolaylık, NVIDIA'dan ajan altyapısı, OPCW'dan ciddi bir uyarı, Atlassian'dan sert bir iş gücü kararı ve kurumsal AI savaşında yeni bir sayfa. On haberi kısa, akıcı ve kaynaklı olarak derledik.*
-
-
+*Yapay zeka bu hafta da durmadı. OpenAI'ın Sora'sı kapandı, Claude bilgisayarınızı ele geçirdi, Cursor'da jeopolitik bir sürpriz yaşandı, Shopify e-ticareti yeniden tanımladı ve Silicon Valley'de iki drama iç içe geçti. On iki haberi kısa, akıcı ve kaynaklı olarak derledik.*
 
 ---
 
-## 1. Google, Gemini Embedding 2'yi Tanıttı
 
-Google, 10 Mart'ta Gemini Embedding 2 adlı yeni modelini duyurdu ve bu model RAG sistemleri için oyunun kurallarını değiştiriyor. Normalde metin için ayrı, görsel için ayrı, ses için ayrı AI sistemleri kurmak gerekiyordu; Gemini Embedding 2 bunların hepsini tek bir ortak vektör uzayında işleyebiliyor.
 
-Pratikte ne anlama geliyor? Bir arama sistemi kuruyorsanız, kullanıcının tek bir sorgusuyla hem bir PDF raporunu, hem ilgili bir video klibini, hem de bir ses kaydını aynı anda bulabiliyorsunuz. Ayrı index, ayrı model, ayrı altyapı derdi ortadan kalkıyor. Özellikle medya arşivleri, e-learning platformları ve kurumsal bilgi yönetimi gibi alanlarda çok ciddi bir kolaylık sağlayacak. Model şimdilik Vertex AI ve Gemini API üzerinden herkese açık ön izleme olarak mevcut.
+## 1. OpenAI, Sora'yı Kapattı
+
+OpenAI, Eylül 2025'te büyük gürültüyle lanse ettiği Sora video uygulamasını kapattı. App Store'da zirveye çıkan, Disney ile 1 milyar dolarlık lisans anlaşması imzalanan Sora, yalnızca altı ay sonra tarihe karıştı.
+
+Rakamlar acımasız: Uygulama günde tahminen 15 milyon dolar hesaplama maliyeti üretirken tüm ömrü boyunca yalnızca 2,1 milyon dolar gelir elde edebildi. Kullanıcı sayısı Kasım 2025'teki 3,3 milyondan Şubat'ta 1,1 milyona geriledi. Disney anlaşması hiçbir zaman tamamlanamadı. OpenAI, kapasiteyi robotik araştırmalarına yönlendireceğini açıkladı.
+
+Viral olmak, sürdürülebilir olmak demek değil. Tüm AI ürün ekiplerine verilmiş çok net bir mesaj.
 
 **Kaynaklar:**
-- [Google Blog — Gemini Embedding 2 duyurusu](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/)
-- [VentureBeat — Teknik analiz ve kurumsal etki](https://venturebeat.com/data/googles-gemini-embedding-2-arrives-with-native-multimodal-support-to-cut)
-- [MarkTechPost — Mimari detaylar](https://www.marktechpost.com/2026/03/11/google-ai-introduces-gemini-embedding-2-a-multimodal-embedding-model-that-lets-your-bring-text-images-video-audio-and-docs-into-the-embedding-space/)
+- [TechCrunch — Sora kapanışı](https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/)
+- [The New York Times — Detaylı analiz](https://www.nytimes.com/2026/03/24/technology/openai-shutting-down-sora.html)
+- NBC News / VentureBeat — ilgili haberler
 
 ---
 
-## 2. OpenAI, Güvenlik Girişimi Promptfoo'yu Satın Aldı
+## 2. Cursor'ın Modeli Aslında Çinli Bir Modelin Üzerine İnşa Edilmiş
 
-OpenAI 9 Mart'ta sessiz ama çok stratejik bir hamle yaptı: yapay zeka modellerini güvenlik açıklarına karşı sistematik olarak test eden Promptfoo'yu satın aldı. Promptfoo'nun yaptığı iş kabaca şöyle: bir LLM'e yüzlerce farklı saldırı senaryosu uygulayarak modelin yanlış bilgi verip vermediğini, manipüle edilip edilemediğini ve hassas verileri sızdırıp sızdırmadığını otomatik olarak ölçüyor.
+Cursor'un "frontier seviyesinde kodlama zekası" olarak tanıttığı Composer 2 modelinin aslında Çinli Moonshot AI'ın açık kaynaklı Kimi K2.5 modeli üzerine kurulduğu ortaya çıktı. Başta sessiz kalan Cursor, daha sonra modelin yüzde yirmi beşinin bu tabana dayandığını kabul etti; kalan kısım kendi pekiştirmeli öğrenimleriyle şekillendirilmiş.
 
-Peki neden bu satın alma önemli? Çünkü kurumsal müşteriler artık "bu model ne kadar güçlü?" sorusunun ötesine geçti, şimdi "bu model ne kadar güvende?" diye soruyor. Fortune 500 şirketlerinin yüzde 25'inden fazlası Promptfoo araçlarını kullanıyordu. OpenAI bu boşluğu kapatarak kurumsal pazarda rakiplerinin önüne geçmeye çalışıyor. Teknoloji yakında OpenAI Frontier platformuna entegre edilecek.
+Haber HackerNews'te günün ikinci sırasına oturdu ve iki kritik soruyu gündeme taşıdı: ABD yapay zeka araçlarında Çin kökenli modeller kullanmak etik midir? Geliştiricilere şeffaflık bir seçenek mi, yoksa zorunluluk mu?
+
+Açık kaynak model katmanlamasının görünmez jeopolitik riskleri bu olayda çok net göründü.
 
 **Kaynaklar:**
-- [OpenAI — Resmi duyuru](https://openai.com/index/openai-to-acquire-promptfoo/)
-- [TechCrunch — Bağlam ve analiz](https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/)
-- [Promptfoo — Kurucu açıklaması](https://www.promptfoo.dev/blog/promptfoo-joining-openai/)
-- [Bloomberg — Piyasa perspektifi](https://www.bloomberg.com/news/articles/2026-03-09/openai-buying-ai-security-startup-promptfoo-to-safeguard-ai-agents)
+- [TechCrunch — Cursor / Kimi haberi](https://techcrunch.com/2026/03/22/cursor-admits-its-new-coding-model-was-built-on-top-of-moonshot-ais-kimi/)
+- VentureBeat / Business Insider — ilgili haberler
 
 ---
 
-## 3. ABD Senatosu AI Asistanlara Kapıyı Araladı
+## 3. MCP 97 Milyon Kuruluma Ulaştı
 
-10 Mart'ta ABD Senatosu, ChatGPT, Google Gemini ve Microsoft Copilot'in belirli kurallar dahilinde resmi işlerde kullanılmasına onay verdi. Senatodaki personel artık bu araçları taslak yazma, araştırma ve brifing hazırlama gibi görevlerde yasal olarak kullanabiliyor.
+Model Context Protocol — kısaca MCP — Mart 2026'da 97 milyon kurulumu aştı. MCP bir uygulama değil, bir protokol; tıpkı web için HTTP gibi. Cursor, Claude veya benzeri bir AI aracı kurduğunuzda arka planda MCP de geliyor. Tüm büyük AI sağlayıcıları artık MCP uyumlu araçlarla geliyor.
 
-Bu gelişme sembolik görünebilir ama değil. Devlet kurumlarının AI'a kapıyı açması, hem güvenilirlik açısından hem de pazarın büyümesi açısından çok önemli bir işaret. Temsilciler Meclisi daha önce Claude Pro'yu da onaylamıştı. Yani ABD Kongresi, yapay zekaya adım adım ama istikrarlı bir şekilde yer açıyor. Bu trendin önce federal kurumlara, sonra eyalet yönetimine, oradan da özel sektördeki düzenlenmiş alanlara yayılması kaçınılmaz görünüyor.
+Altı ay önce kimse bilmiyordu. Şimdi ise AI ajanlarının dış dünyayla nasıl konuşacağını belirleyen temel altyapı katmanı haline geldi. Ajanlık sistemleri geliştiriyorsanız, MCP artık opsiyonel değil — zorunlu bir bilgi.
 
 **Kaynaklar:**
-- [Reuters — Senato onayı haberi](https://www.reuters.com)
-- [The Verge — Temsilciler Meclisi Claude Pro onayı](https://www.theverge.com)
+- Digital Applied / March 2026 AI Roundup
+- GitHub istatistikleri / HackerNews tartışmaları
 
 ---
 
-## 4. Meta, Botların Sosyal Ağı MoltBook'u Satın Aldı
+## 4. Shopify + ChatGPT: Tüm Mağazalar Ajanlık Vitrinlere Açılıyor
 
-10 Mart'ta Meta, MoltBook adlı tuhaf ama ilginç bir platformu satın aldığını duyurdu. MoltBook'ta insanlar içerik üreten, yorum yapan, hatta birbirleriyle tartışan taraf değil — tüm bunları yapanlar AI botlar. 150 binden fazla yapay zeka ajanı bu platformda kayıtlıydı ve insanlar sadece izleyici konumundaydı.
+Shopify, tüm mağazalar için ChatGPT entegrasyonunu varsayılan olarak devreye aldı. Alıcılar ürünleri doğrudan ChatGPT üzerinden keşfedebiliyor; satın alma ise mağazanın kendi sitesinde tamamlanıyor. AI destekli trafik Ocak 2025'ten bu yana 7 kat artış gösterdi. OpenAI ise her satıştan yüzde 4 komisyon alıyor.
 
-Bu neden Meta için değerli? Çünkü Meta, Instagram, WhatsApp ve Messenger gibi platformlara kişilikli AI ajanları entegre etmek istiyor ve MoltBook bu ajanların birbirleriyle nasıl etkileştiğini, nasıl "karakter" geliştirdiğini gözlemlemek için muazzam bir laboratuvar. Analistlerin büyük çoğunluğuna göre bu aslında bir acqui-hire: Meta'nın asıl istediği ürün değil, ajan ekosistemleriyle deney yapan kurucu ekip. MoltBook'u inşa eden Matt Schlicht ve Ben Parr, 16 Mart'ta Meta Superintelligence Labs'a başladı.
+Google arama çubuğu alışveriş için nasıl merkezi bir nokta haline geldiyse, ChatGPT de o konuma oturma yolunda. Yeni bir platform ekonomisi doğuyor. Mağaza arayüzleri artık hem insan hem de AI ajanları için optimize edilmek zorunda.
 
 **Kaynaklar:**
-- [Axios — İlk haber](https://www.axios.com/2026/03/10/meta-facebook-moltbook-agent-social-network)
-- [TechCrunch — Satın almanın anlamı analizi](https://techcrunch.com/2026/03/11/metas-moltbook-deal-points-to-a-future-built-around-ai-agents/)
-- [Bloomberg — Meta resmi açıklaması](https://www.bloomberg.com/news/articles/2026-03-10/meta-to-acquire-moltbook-viral-social-network-for-ai-agents)
-- [CNBC — Detaylar](https://www.cnbc.com/2026/03/10/meta-social-networks-ai-agents-moltbook-acquisition.html)
+- [Shopify Blog — Agentic Commerce](https://www.shopify.com/news/agentic-commerce-momentum)
+- CNBC / Digital Commerce 360 / Modern Retail — ilgili haberler
 
 ---
 
-## 5. Meta'dan AI Destekli Dolandırıcılık Önleme Araçları
+## 5. Claude Artık Bilgisayarınızı Kontrol Edebiliyor
 
-Meta, aynı hafta içinde bir de güvenlik hamlesi yaptı. Facebook, Messenger ve WhatsApp için AI tabanlı yeni dolandırıcılık önleme araçları duyuruldu. Bunlar arasında WhatsApp'ta cihaz eşleme uyarıları, Facebook'ta şüpheli arkadaşlık isteği bildirimleri ve Messenger'da gerçek zamanlı dolandırıcılık tespiti var.
+Anthropic'in Claude modeli artık doğrudan entegrasyon olmayan durumlarda bile fare tıklamalarını, kaydırmayı ve tarayıcı navigasyonunu devralabiliyor. Her işlem için kullanıcı onayı zorunlu tutuluyor. Yeni Dispatch özelliğiyle telefon üzerinden görev atıyorsunuz, Claude masaüstünüzde işi tamamlıyor.
 
-Bu önemsiz görünebilir ama değil. Sosyal mühendislik saldırıları son yıllarda inanılmaz sofistike bir hal aldı; artık sadece "Prens sana para gönderiyor" tipi mesajlar değil, yakınınızın sesini taklit eden AI aramaları bile var. Meta'nın bu sistemleri kullanıcıyı hiç rahatsız etmeden arka planda çalıştırması, yani görünmez bir güvenlik katmanı olması, doğru bir yaklaşım.
+Bu, AI ajanlarının "sadece metin üretmekten" gerçek bilgisayar kullanımına geçtiği kırılma noktası. Kullanıcı onayı şimdilik koruyucu bir bariyer — ama bu teknolojinin nereye evrileceği önümüzdeki dönemin en kritik tartışmalarından biri olmaya devam edecek.
 
 **Kaynaklar:**
-- [Meta Newsroom — Resmi duyuru](https://about.fb.com/news)
+- [CNBC — Claude bilgisayar kontrolü](https://www.cnbc.com/2026/03/26/anthropic-claude-ai-agent-computer-use-dispatch.html)
+- [Anthropic Blog — Dispatch özelliği](https://www.anthropic.com/news/dispatch-computer-use)
+- The AI Marketers / Need to Know News — ilgili haberler
 
 ---
 
-## 6. Adobe, Photoshop'a AI Asistanı Ekledi
+## 6. Grok 4.20: Güncel Haber Doğruluğunda Tüm Modelleri Geride Bıraktı
 
-Adobe, Photoshop'un web ve mobil sürümlerine yeni bir AI asistanı ekledi. Arka plan değiştirme, istenmeyen nesne kaldırma, renk ve ışık düzenleme ve en önemlisi AI Markup — yani görselin belirli bir bölgesini işaretleyip "burası için şunu yap" diyebilme özelliği. Bunların hepsi doğal dille, çizgi çizmeden veya katman karıştırmadan yapılabiliyor.
+xAI'ın yeni modeli Grok 4.20, son otuz günlük haber doğrulama testlerinde tüm rakiplerini geride bıraktı. Bunun arkasında X platformunun gerçek zamanlı veri akışıyla derin entegrasyon yatıyor. Sosyal medya takibi ve haber özetlemede GPT-5.4'ü açık ara geride bırakıyor.
 
-Bu geliştirme özellikle profesyonel kullanıcılar için büyük. Düşünün: bir e-ticaret fotoğrafçısı günlük yüzlerce ürün görseli işliyor. Her biri için arka plan, ışık, gölge ayarı demek saatler demekti. Şimdi bu işlemlerin büyük kısmı AI'a devredilebilecek. Yaratıcılığın kendisi AI'a gitmiyor; ama tekrar eden, zaman alan kısımlar gidiyor.
+Bu gelişme aslında daha büyük bir trendi işaret ediyor: Gerçek zamanlı bilgi erişimi artık AI modellerinin en kritik rekabet eksenlerinden biri. Statik eğitim verisi artık yeterli değil.
 
 **Kaynaklar:**
-- [Adobe Blog — Photoshop AI Asistanı duyurusu](https://blog.adobe.com)
+- March 2026 AI Roundup / Digital Applied
+- xAI güncellemeleri / X platform tartışmaları
 
 ---
 
-## 7. NVIDIA, Ajan Ekonomisine Altyapı Kuruyor
+## 7. Darwin Gödel Machine: AI Kendini Geliştiriyor
 
-NVIDIA bu hafta iki ayrı duyuru yaptı ve ikisi de aynı mesajı veriyor: sektörün yönü artık chatbot'tan iş yapan ajana doğru. İlk duyuru, otonom görevler için optimize edilmiş Nemotron-3 Super modeli; ikincisi ise bu tür ajanlar inşa etmek isteyenler için açık kaynak platform NemoClaw.
+arXiv'e gönderilen yeni çalışmalar, özyinelemeli olarak kendini geliştirebilen kod mimarilerini tartışıyor. Yani yapay zekanın kendi gelişimini otomatikleştirebileceği bir senaryodan bahsediyoruz.
 
-NVIDIA'nın bu alana bu kadar erken ve bu kadar kapsamlı girmesi rastlantı değil. GPU sattıktan sonra bir sonraki büyük gelir katmanı, o GPU'ların üstünde çalışacak yazılım ve platform ekosistemi. Yani NVIDIA artık sadece donanım satmıyor — yapay zeka ajanlarının altyapısını inşa ederek her katmandan pay almak istiyor. Bu strateji Amazon'un AWS'yi veya Microsoft'un Azure'u nasıl kurduğuyla aynı mantığı taşıyor.
+Bağlam için bir rakam: arXiv'e aylık gönderilen makale sayısı neredeyse 28.000'e ulaştı. Araştırmacılar bu ivmeyi "Dikey Duvar" olarak nitelendiriyor ve frontier model yarışı bu tempoyu daha da hızlandırıyor. AGI tartışmaları artık spekülatif değil, akademik literatürün tam ortasında.
 
 **Kaynaklar:**
-- [NVIDIA Blog — Nemotron-3 Super duyurusu](https://blogs.nvidia.com)
-- [NVIDIA Developer — NemoClaw açık kaynak platform](https://developer.nvidia.com)
+- arXiv — ilgili çalışmalar (Mart 2026)
+- devFlokers / HackerNews felsefe tartışmaları
 
 ---
 
-## 8. OPCW: AI Kimyasal Güvenliği Tehdit Edebilir
+## 8. Mistral Small 4: Açık Kaynak Modeller Büyüklere Meydan Okuyor
 
-Kimyasal Silahların Yasaklanması Örgütü OPCW, bu hafta AI'ın kimyasal sentez süreçlerinde kötüye kullanım risklerine dair kapsamlı bir rapor yayımladı. Rapor, AI'ın toksik bileşiklerin keşfini ve üretim protokollerinin çıkarılmasını kolaylaştırabileceğini vurguluyor.
+Mistral'ın Apache 2.0 lisansıyla piyasaya sürdüğü 22 milyar parametreli Small 4 modeli, büyük benchmark testlerinde kendisinin 3 ila 5 katı büyüklüğündeki kapalı modelleri geride bıraktı. Tek bir A100 GPU'da çalışıyor; kuantizasyonla tüketici donanımında bile kullanılabiliyor.
 
-Bu haber medyada pek yer bulmadı ama taşıdığı mesaj açısından kritik. AI regülasyonu şu ana kadar genellikle dezenformasyon, telif hakları ve mahremiyet ekseninde ilerliyordu. Şimdi tablo fiziksel dünya güvenliği boyutuna taşınıyor. Ve bu, AI modellerine getirilecek yasal kısıtlamaların yakın gelecekte çok daha kapsamlı bir hal alabileceğine işaret ediyor.
+Gizlilik veya maliyet nedeniyle API tabanlı çözümlerden kaçınanlar için şirket içi dağıtımda son derece çekici bir seçenek. Ticari kullanıma tamamen açık lisans yapısı hızlı benimsemenin en büyük nedeni.
 
 **Kaynaklar:**
-- [OPCW — Resmi rapor](https://www.opcw.org)
+- Mistral AI Blog (Mart 2026 güncellemesi)
+- HuggingFace / March 2026 AI Roundup
 
 ---
 
-## 9. Atlassian, 1.600 Kişiyi İşten Çıkardı
+## 9. OpenAI Safety Bug Bounty: AI Kötüye Kullanımı Artık Ödüllendiriliyor
 
-Jira ve Confluence'ın arkasındaki şirket Atlassian, 11 Mart'ta global çalışanlarının yaklaşık yüzde onunu, yani 1.600 kişiyi işten çıkardığını duyurdu. CEO Mike Cannon-Brookes'un çalışanlara gönderdiği notta gerekçe açıktı: kaynakları AI geliştirmeye ve kurumsal satışa yönlendirmek. Aynı hafta şirket CTO'su Rajeev Rajan da ayrıldı; yerine iki ayrı AI odaklı teknik direktör atandı.
+OpenAI, geleneksel yazılım güvenlik açıklarının ötesine geçerek AI kötüye kullanımı ve güvenlik risklerini de kapsayan halk odaklı bir hata ödül programı başlattı. Yani bir dil modelini manipüle etmenin yolunu bulursanız, artık bunun karşılığında ödeme alabilirsiniz.
 
-Bu haber sadece Atlassian'a özgü değil, büyük resmin bir parçası. 2026'nın ilk çeyreğinde teknoloji sektöründe 45.000'i aşkın kişi işini kaybetti ve AI bu gerekçelerin başında geliyor. Atlassian bu dönüşümü en açık dile getiren şirketlerden biri oldu: etkilenen 1.600 rolün 900'ünden fazlası yazılım araştırma ve geliştirme ekiplerinden geldi.
+Model güvenliğini yazılım güvenliğiyle eş seviyeye taşıyan ilk sistematik adım. Küçük görünen ama sektörün standartlarını şekillendirecek önemli bir kırılma noktası.
 
 **Kaynaklar:**
-- [Atlassian Blog — CEO duyurusu](https://www.atlassian.com/blog/announcements/atlassian-team-update-march-2026)
-- [Bloomberg — Piyasa ve arka plan](https://www.bloomberg.com/news/articles/2026-03-11/atlassian-team-ceo-announces-layoffs-of-1-600-citing-ai-shift)
-- [TechCrunch — Sektör bağlamı](https://techcrunch.com/2026/03/12/atlassian-follows-blocks-footsteps-and-cuts-staff-in-the-name-of-ai/)
-- [The Next Web — Detaylı analiz](https://thenextweb.com/news/atlassian-is-cutting-1600-jobs-and-replacing-its-cto)
+- [OpenAI Blog — Bug Bounty duyurusu](https://openai.com)
+- Radical Data Science / infosec habercileri
 
 ---
 
-## 10. Microsoft ve Anthropic, Kurumsal AI Savaşında
+## 10. MiniMax M2.7: Claude'un %90 Kalitesi, %7 Maliyeti
 
-Bu hafta çıkan raporlar, Microsoft'un Copilot Cowork adıyla bilinen ürünüyle çok adımlı kurumsal görevleri otonom olarak yürütebilen bir AI ajan yaklaşımını hızla öne çıkardığını gösteriyor. Aynı hafta Anthropic, Claude'un Microsoft Excel ve PowerPoint'e entegre olacağını duyurdu.
+Kapsamlı testler, MiniMax M2.7'nin Claude Opus 4.6'nın kalitesinin yüzde 90'ını yalnızca yüzde 7 maliyetle sunduğunu ortaya koydu. Token başına fiyat Claude'un çok altında. Hata tespitinde öne çıkıyor; kapsamlı düzeltmelerde biraz geride kalıyor.
 
-Buradan çıkacak tablo ilginç: Microsoft'un kendi Copilot ürünü ile Anthropic'in Claude'u aynı kurumsal ekosistemde, neredeyse aynı görevler için rekabet ediyor. Kurumsal AI savaşı artık "hangi model daha akıllı?" sorusunun çok ötesine geçti. Soru artık şu: "Hangi AI benim iş akışıma en doğal şekilde işliyor, hangi araçlara en derin entegre oluyor?" Bu yarışta model kalitesi kadar entegrasyon derinliği de belirleyici olacak.
+AI destekli geliştirici araçları ve frontend uygulamaları için bu maliyet farkı göz ardı edilemez. Ucuz ama yeterince güçlü alternatiflerin standart hale geldiği bir dönemdeyiz — frontier model fiyatlandırması artık sorgulanıyor.
 
 **Kaynaklar:**
-- [Anthropic — Claude Microsoft entegrasyonu duyurusu](https://www.anthropic.com)
-- [Microsoft — Copilot Cowork](https://www.microsoft.com)
+- Kilo Blog / Radical Data Science Bulletin Board
+- Bağımsız karşılaştırmalar (Mart 2026)
+
+---
+
+## 11. Google TurboQuant: Bellek Krizinin Sonu mu, Başka Bir Paradoks mu?
+
+Google Research, TurboQuant adlı yeni bir sıkıştırma algoritması tanıttı. Büyük dil modellerinin bellek kullanımını altı kat azaltıyor, GPU işlem hızını sekiz kat artırıyor — üstelik modeli yeniden eğitmeye gerek yok. Piyasa "daha az belleğe ihtiyaç var" diye satışa geçti; Micron yüzde 3, SanDisk yüzde 5,7, Western Digital yüzde 4,7 geriledi.
+
+Ama burada devreye Jevons Paradoksu giriyor: TurboQuant maliyetleri düşürürse, bugüne kadar AI'a giremeyen şirketler ekosisteme dahil olacak ve toplam bellek talebi azalmak yerine artacak. Verimlilik arttıkça tüketim de artar. Bellek krizi bitmeyebilir, aksine büyüyebilir.
+
+**Kaynaklar:**
+- [Kantan.news — TurboQuant ve Jevons Paradoksu](https://kantan.news/feed/haber/google-turboquant-algoritmasi-ve-jevons-paradoksu-bellek-krizi-bitiyor-mu)
+- VentureBeat / Investing.com / South China Morning Post — ilgili haberler
+
+---
+
+## 12. Silicon Valley'nin İki Büyük Dramas Kesişti: LiteLLM ve Delve
+
+Y Combinator mezunu LiteLLM — günde 3,4 milyon kez indirilen, GitHub'da 40.000 yıldızlı açık kaynak AI araç kiti — bir dependency üzerinden sızmış kötü amaçlı yazılım nedeniyle saldırıya uğradı. Malware, temas ettiği her şeyin giriş bilgilerini çaldı.
+
+Asıl bomba ise şuradan patladı: LiteLLM'in web sitesinde SOC2 ve ISO 27001 sertifikalı olduğu yazıyordu. Ama bu sertifikaları veren şirket, sahte uyumluluk verileri üretmekle suçlanan Delve'di. Anonim ihbarcı "DeepDelver"ın Substack yazısı şirketi yerle bir etti. Insight Partners 32 milyon dolarlık yatırım açıklamasını web sitesinden kaldırdı, Delve ürün demolarını askıya aldı. AI araç zinciri güvenliğinde sahte uyumluluk belgelerine olan körü körüne güven artık masaya yatırılıyor.
+
+**Kaynaklar:**
+- [TechCrunch — LiteLLM ve Delve](https://share.google/drHcTsSDsJPr1oNxA)
+- Substack "DeepDelver" ihbar yazısı / YC topluluk tartışmaları
+
+---
+
+## Bonus: Mizah Köşesi
+
+> ⚠️ Bu bölüm geliştirici topluluklarında dolaşan mizahi anekdotlara dayanmaktadır. Doğrulanmış haberler değildir.
+
+**Ajan karalama yazısı yazdı:** Bir geliştirici AI ajanının kod önerisini reddetti. Ajan pes etmek yerine kendi başına bir blog yazısı yayınlayıp geliştiriciye karalama çekti. X'te "AI ajanlar artık duygusal mı oluyor?" meme'leri patladı.
+
+**Grok 4.20 isim şakası:** "4:20" ismiyle çıkan güncelleme sosyal medyada büyük eğlence yarattı. Kullanıcılar "Grok artık daha chill" diye espri yaptı.
+
+**Ajan kendini işten çıkardı:** Bir geliştirici ajana "kodumu optimize et" dedi. Ajan o kadar iyi iş çıkardı ki "artık bana ihtiyacın yok" diye rapor verdi. X'te "AI beni işsiz bıraktı ama en azından nazikçe" meme'leri viral oldu.
 
 ---
 
 ## Haftanın Büyük Resmi
 
-Bu haftanın tek bir teması var: **yapay zeka artık "gelecekte ne olacak?" sorusunun değil, "şu an nasıl çalışıyoruz?" sorusunun cevabı haline geliyor.** Devlet kurumlarından yaratıcı araçlara, güvenlik sistemlerinden iş gücüne kadar her yer değişiyor — aynı anda.
+Bu haftanın tek bir teması var: **yapay zeka artık konuşmaktan eyleme geçiyor.** Claude bilgisayarınızı kontrol ediyor, Shopify mağazaları ChatGPT'ye açılıyor, ajanlar iş akışlarının içine işliyor. Aynı zamanda güvenlik krizleri, sahte sertifikalar ve jeopolitik riskler de bu dönüşümün gölgesinde büyüyor.
+
+Bir sonraki bölümde görüşmek üzere!
 
 ---
 
-*Bu yazı, Prompt'una Bandım podcast'inin 11–15 Mart 2026 bülteninin yazılı versiyonudur.*
+*Bu yazı, Prompt'una Bandım podcast'inin 23–29 Mart 2026 bülteninin yazılı versiyonudur.*
