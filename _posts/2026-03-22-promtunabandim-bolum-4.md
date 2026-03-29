@@ -10,6 +10,8 @@ Herkese selamlar, ben Ahmet! **Prompt'una Bandım**'ın dördüncü bölümüne 
 
 *Bu hafta da yapay zeka duraksız ilerledi. Google'dan uçtan uca kodlama ajanı, OpenAI'dan Python ekosistemini sarsan bir satın alma, Mistral'dan matematiksel doğrulama, GitHub'dan görünmez bir saldırı dalgası ve daha fazlası. On iki haberi kısa, akıcı ve kaynaklı olarak derledik.*
 
+
+
 ---
 
 ## 1. Google AI Studio'da "Full-Stack Coding Agent" Dönemi
