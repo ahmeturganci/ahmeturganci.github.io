@@ -10,7 +10,9 @@
     "format": "prettier --write \"**/*.{html,css,scss,sass,js,json,md,yml,yaml}\"",
     "format:check": "prettier --check \"**/*.{html,css,scss,sass,js,json,md,yml,yaml}\"",
     "lint:html": "htmlhint \"**/*.html\" --ignore \"_site/**\"",
-    "lint:css": "stylelint \"**/*.{css,scss,sass}\" --ignore-path .gitignore"
+    "lint:css": "stylelint \"**/*.{css,scss,sass}\" --ignore-path .gitignore",
+    "cover": "node scripts/generate-cover.js",
+    "cover:all": "node scripts/generate-cover.js --all"
   },
   "repository": {
     "type": "git",

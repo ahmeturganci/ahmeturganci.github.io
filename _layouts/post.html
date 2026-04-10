@@ -4,6 +4,12 @@ layout: default
 
 <article>
   {% include meta.html post=page %}
+
+  {% if page.cover_image %}
+    <figure class="post-cover">
+      <img src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
+    </figure>
+  {% endif %}
   
   {{ content }}
   

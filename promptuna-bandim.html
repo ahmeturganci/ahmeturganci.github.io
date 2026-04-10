@@ -1,0 +1,16 @@
+---
+title: "Prompt'una Bandım"
+layout: default
+permalink: /promptuna-bandim/
+---
+
+{% assign series_posts = site.posts | where: "series", "promptuna-bandim" %}
+
+<article>
+  <header class="series-page-header">
+    <h1>{{ page.title }}</h1>
+    <p>Yapay zeka dunyasindaki haftalik gelismeleri , kisa ozetler ve bolum sirasi ile tek sayfada takip edin.</p>
+  </header>
+
+  {% include series-grid.html posts=series_posts empty_message="Henuz bu seri icin yayinlanmis bir yazi yok." %}
+</article>

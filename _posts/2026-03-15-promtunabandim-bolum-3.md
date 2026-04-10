@@ -2,6 +2,10 @@
 title: "Prompt'una Bandım - Bölüm 3: Haftanın Yapay Zeka Gündemi"
 layout: post
 show_read_more: true
+series: promptuna-bandim
+episode: 3
+cover_image: /assets/images/promptuna-bandim-03.svg
+cover_alt: "Prompt'una Bandım bölüm 3 kapak görseli"
 ---
 
 Herkese selamlar, ben Ahmet! **Prompt'una Bandım**'ın üçüncü bölümüne hoş geldiniz.
