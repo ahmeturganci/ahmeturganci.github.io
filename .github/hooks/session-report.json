@@ -1,0 +1,12 @@
+{
+  "hook": "session-report",
+  "description": "Generates a session report after each Copilot coding session on the ahmeturganci.github.io Jekyll blog.",
+  "trigger": "session_end",
+  "actions": [
+    {
+      "type": "run_agent",
+      "agent": "session-insights",
+      "instruction": "Summarise the completed session. Include changed files, the reason for changes, key decisions, and any follow-up tasks."
+    }
+  ]
+}
