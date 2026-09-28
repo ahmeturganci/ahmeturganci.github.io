@@ -18,9 +18,20 @@
     ["klavuz", "kılavuz"],
   ];
   const QUESTION_PATTERNS = [
-    /\b([a-zçğıöşü]+(?:yor|dı|di|du|dü|tı|ti|tu|tü|acak|ecek|ar|er|ır|ir|ur|ür|malı|meli|sa|se|mış|miş|muş|müş))(m[ıiuü])(s[ıiuü]n|y[ıiuü]m|y[ıiuü]z)\b/giu,
-    /\b([a-zçğıöşü]+(?:yor|dı|di|du|dü|tı|ti|tu|tü|acak|ecek|ar|er|ır|ir|ur|ür|malı|meli|sa|se|mış|miş|muş|müş))(m[ıiuü])\b/giu,
-    /\b(var|yok|değil|olur|tamam)(m[ıiuü])\b/giu,
+    {
+      pattern:
+        /\b([a-zçğıöşü]+(?:yor|dı|di|du|dü|tı|ti|tu|tü|acak|ecek|ar|er|ır|ir|ur|ür|malı|meli|sa|se|mış|miş|muş|müş))(m[ıiuü])(s[ıiuü]n|y[ıiuü]m|y[ıiuü]z)\b/giu,
+      replacer: (_, word, suffix, ending) => `${word} ${suffix}${ending}`,
+    },
+    {
+      pattern:
+        /\b([a-zçğıöşü]+(?:yor|dı|di|du|dü|tı|ti|tu|tü|acak|ecek|ar|er|ır|ir|ur|ür|malı|meli|sa|se|mış|miş|muş|müş))(m[ıiuü])\b/giu,
+      replacer: (_, word, suffix) => `${word} ${suffix}`,
+    },
+    {
+      pattern: /\b(var|yok|değil|olur|tamam)(m[ıiuü])\b/giu,
+      replacer: (_, word, suffix) => `${word} ${suffix}`,
+    },
   ];
 
   function preserveCase(source, replacement) {
@@ -93,6 +104,18 @@
         changed = true;
       }
 
+      function escapeRegExp(value) {
+        return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      }
+
+      function createWordPattern(source) {
+        const escapedSource = escapeRegExp(source).replace(/\s+/g, "\\s+");
+        return new RegExp(
+          `(?<![\\p{L}\\p{N}_])${escapedSource}(?![\\p{L}\\p{N}_])`,
+          "giu"
+        );
+      }
+
       return nextValue;
     });
 
@@ -152,7 +175,7 @@
         text,
         suggestions,
         `Yaygın yazım hatası düzeltildi: ${source} → ${target}`,
-        new RegExp(`\\b${source}\\b`, "giu"),
+        createWordPattern(source),
         target
       );
     });
@@ -160,11 +183,8 @@
     text = applyRule(text, suggestions, "Soru eki ayrı yazıldı.", value => {
       let result = value;
 
-      QUESTION_PATTERNS.forEach(pattern => {
-        result = result.replace(
-          pattern,
-          (_, word, suffix, ending = "") => `${word} ${suffix}${ending}`
-        );
+      QUESTION_PATTERNS.forEach(({ pattern, replacer }) => {
+        result = result.replace(pattern, replacer);
       });
 
       return result;
@@ -223,9 +243,9 @@
     }
 
     async function handleCorrection() {
-      const text = input.value.trim();
+      const text = input.value;
 
-      if (!text) {
+      if (!text.trim()) {
         status.textContent = "Lütfen düzeltilecek bir metin gir.";
         output.value = "";
         summary.hidden = true;
