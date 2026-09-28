@@ -6,7 +6,7 @@ layout: page
 
 <div class="proofreader-page">
   <p class="proofreader-intro">
-    Metnini yapıştır, Türkçe yazım ve imla önerilerini otomatik al. Araç, metni istemci tarafında analiz edip düzenlenmiş hâlini üretir.
+    Metnini yapıştır, yaygın Türkçe yazım ve imla hatalarını otomatik düzelt. Araç, metni tarayıcı içinde analiz edip düzenlenmiş hâlini üretir.
   </p>
 
   <div class="proofreader-grid">
@@ -45,10 +45,11 @@ layout: page
         <ul data-role="suggestions"></ul>
       </div>
     </section>
+
   </div>
 
   <p class="proofreader-note">
-    Not: Sonuçlar otomatik önerilerden oluşur; paylaşmadan önce son kontrolü yapman iyi olur.
+    Not: Sonuçlar otomatik kurallarla üretilir; paylaşmadan önce son kontrolü yapman iyi olur.
   </p>
 </div>
 
