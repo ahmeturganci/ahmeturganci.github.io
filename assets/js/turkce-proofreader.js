@@ -94,26 +94,15 @@
     replacement
   ) {
     let changed = false;
-    const nextText = text.replace(pattern, match => {
+    const nextText = text.replace(pattern, (...args) => {
+      const match = args[0];
       const nextValue =
         typeof replacement === "function"
-          ? replacement(match)
+          ? replacement(...args)
           : preserveCase(match, replacement);
 
       if (nextValue !== match) {
         changed = true;
-      }
-
-      function escapeRegExp(value) {
-        return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      }
-
-      function createWordPattern(source) {
-        const escapedSource = escapeRegExp(source).replace(/\s+/g, "\\s+");
-        return new RegExp(
-          `(?<![\\p{L}\\p{N}_])${escapedSource}(?![\\p{L}\\p{N}_])`,
-          "giu"
-        );
       }
 
       return nextValue;
@@ -124,6 +113,18 @@
     }
 
     return nextText;
+  }
+
+  function escapeRegExp(value) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  function createWordPattern(source) {
+    const escapedSource = escapeRegExp(source).replace(/\s+/g, "\\s+");
+    return new RegExp(
+      `(?<![\\p{L}\\p{N}_])${escapedSource}(?![\\p{L}\\p{N}_])`,
+      "giu"
+    );
   }
 
   function normalizeText(rawText) {
@@ -242,7 +243,7 @@
       return;
     }
 
-    async function handleCorrection() {
+    function handleCorrection() {
       const text = input.value;
 
       if (!text.trim()) {
