@@ -17,6 +17,11 @@
     ["ardarda", "art arda"],
     ["klavuz", "kılavuz"],
   ];
+  const QUESTION_PATTERNS = [
+    /\b([a-zçğıöşü]+(?:yor|dı|di|du|dü|tı|ti|tu|tü|acak|ecek|ar|er|ır|ir|ur|ür|malı|meli|sa|se|mış|miş|muş|müş))(m[ıiuü])(s[ıiuü]n|y[ıiuü]m|y[ıiuü]z)\b/giu,
+    /\b([a-zçğıöşü]+(?:yor|dı|di|du|dü|tı|ti|tu|tü|acak|ecek|ar|er|ır|ir|ur|ür|malı|meli|sa|se|mış|miş|muş|müş))(m[ıiuü])\b/giu,
+    /\b(var|yok|değil|olur|tamam)(m[ıiuü])\b/giu,
+  ];
 
   function preserveCase(source, replacement) {
     if (source === source.toLocaleUpperCase("tr-TR")) {
@@ -100,7 +105,19 @@
 
   function normalizeText(rawText) {
     const suggestions = [];
-    let text = rawText.replace(/\r\n/g, "\n").trim();
+    const normalizedInput = rawText.replace(/\r\n/g, "\n");
+    const leadingWhitespace = normalizedInput.match(/^\s*/u)?.[0] || "";
+    const trailingWhitespace = normalizedInput.match(/\s*$/u)?.[0] || "";
+    const startIndex = leadingWhitespace.length;
+    const endIndex = normalizedInput.length - trailingWhitespace.length;
+    let text = normalizedInput.slice(startIndex, endIndex);
+
+    if (!text.trim()) {
+      return {
+        correctedText: rawText,
+        suggestions,
+      };
+    }
 
     text = applyRule(
       text,
@@ -140,12 +157,18 @@
       );
     });
 
-    text = applyRule(text, suggestions, "Soru eki ayrı yazıldı.", value =>
-      value.replace(
-        /\b([a-zçğıöşü]+(?:yor|dı|di|du|dü|tı|ti|tu|tü|acak|ecek|ar|er|ır|ir|ur|ür|malı|meli|sa|se|mış|miş|muş|müş|var|yok))(m[ıiuü])(s[ıiuü]n|y[ıiuü]m|y[ıiuü]z|lar|ler)?\b/giu,
-        (_, word, suffix, ending = "") => `${word} ${suffix}${ending}`
-      )
-    );
+    text = applyRule(text, suggestions, "Soru eki ayrı yazıldı.", value => {
+      let result = value;
+
+      QUESTION_PATTERNS.forEach(pattern => {
+        result = result.replace(
+          pattern,
+          (_, word, suffix, ending = "") => `${word} ${suffix}${ending}`
+        );
+      });
+
+      return result;
+    });
     text = applyRule(
       text,
       suggestions,
@@ -154,7 +177,7 @@
     );
 
     return {
-      correctedText: text,
+      correctedText: `${leadingWhitespace}${text}${trailingWhitespace}`,
       suggestions: [...new Set(suggestions)].slice(0, MAX_SUGGESTIONS),
     };
   }
@@ -166,7 +189,13 @@
       return;
     }
 
-    listElement.innerHTML = items.map(item => `<li>${item}</li>`).join("");
+    listElement.replaceChildren(
+      ...items.map(item => {
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+        return listItem;
+      })
+    );
     summaryElement.hidden = false;
   }
 
