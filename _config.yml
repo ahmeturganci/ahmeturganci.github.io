@@ -21,6 +21,7 @@ navigation:
   - { file: "promptuna-bandim.html" }
   - { file: "index.html" }
   - { file: "trip.md" }
+  - { file: "turkce-duzeltici.md" }
   - { file: "blog.html" }
 
 # Social Links

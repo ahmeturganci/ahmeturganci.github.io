@@ -299,6 +299,109 @@
   font-size: .82em
   color: reduce(55)
 
+// ── Turkish Proofreader ──────────────────────────────────────────────────────
+
+.proofreader-page
+  display: flex
+  flex-direction: column
+  gap: 1.5rem
+
+.proofreader-intro, .proofreader-note
+  max-width: 62ch
+  color: reduce(70)
+  line-height: 1.7
+  margin: 0
+
+.proofreader-grid
+  display: grid
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+  gap: 1.25rem
+
+.proofreader-card
+  display: flex
+  flex-direction: column
+  gap: .9rem
+  padding: 1.25rem
+  border: 1px solid reduce(12)
+  border-radius: 1rem
+  background: rgba($light, .97)
+  box-shadow: 0 .5rem 1.4rem rgba($dark, .05)
+
+.proofreader-label
+  font-weight: 700
+
+.proofreader-textarea
+  width: 100%
+  min-height: 16rem
+  padding: .95rem 1rem
+  border: 1px solid reduce(15)
+  border-radius: .85rem
+  resize: vertical
+  font: inherit
+  line-height: 1.65
+  background: rgba($light, .98)
+  color: inherit
+
+  &:focus
+    outline: 2px solid rgba($link-color, .2)
+    border-color: rgba($link-color, .45)
+
+.proofreader-textarea--output
+  background: reduce(2)
+
+.proofreader-actions, .proofreader-output-header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: .75rem
+  flex-wrap: wrap
+
+.proofreader-button
+  appearance: none
+  border: 0
+  border-radius: 999px
+  background: $link-color
+  color: $light
+  cursor: pointer
+  font: inherit
+  font-weight: 700
+  padding: .7rem 1.15rem
+  transition: transform .15s ease, opacity .15s ease, box-shadow .15s ease
+  box-shadow: 0 .45rem 1rem rgba($link-color, .22)
+
+  &:hover:not(:disabled)
+    transform: translateY(-1px)
+
+  &:disabled
+    cursor: not-allowed
+    opacity: .6
+    box-shadow: none
+
+.proofreader-button--ghost
+  background: reduce(6)
+  color: inherit
+  box-shadow: none
+
+.proofreader-status
+  min-height: 1.5rem
+  margin: 0
+  color: reduce(55)
+
+.proofreader-summary
+  border-top: 1px solid reduce(10)
+  padding-top: .9rem
+
+  h2
+    margin: 0 0 .65rem
+    font-size: 1em
+
+  ul
+    margin: 0
+    padding-left: 1.2rem
+
+  li + li
+    margin-top: .4rem
+
 @media (max-width: 36em)
   .trip-sections
     grid-template-columns: 1fr
@@ -307,6 +410,9 @@
     padding: 1.1rem 1.2rem
 
   .trip-countries
+    grid-template-columns: 1fr
+
+  .proofreader-grid
     grid-template-columns: 1fr
 
 a:hover .icon
