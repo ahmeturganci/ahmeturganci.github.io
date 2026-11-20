@@ -6,7 +6,9 @@ layout: page
 
 <div class="trip-page">
 
-  <p class="trip-intro">Pandemi sonrasında bir karar aldım ve dijital göçebe gibi hem seyahat edip hem çalışarak Türkiye'nin 81 ilini keşfetmeye başladım. Gittiğim her ilin güzel yerlerini, kültürünü ve yemeklerini elimden geldiğince görmeye çalışıyorum. Dünya'yı da yavaş yavaş gezmeye devam ediyorum.</p>
+  <div class="trip-header">
+    <h1>Places I've visited</h1>
+  </div>
 
   <div class="trip-sections">
     <a href="#turkiye" class="trip-card trip-card--turkiye">
@@ -20,8 +22,8 @@ layout: page
       </div>
       <div class="trip-card__body">
         <h2 class="trip-card__title">Türkiye</h2>
-        <p class="trip-card__stat"><strong>47</strong> / 81 il</p>
-        <p class="trip-card__desc">Anadolu'nun dört bir yanını keşfetmeye devam ediyorum.</p>
+        <p class="trip-card__stat"><strong>47</strong> / 81 provinces</p>
+        <p class="trip-card__desc">Still exploring every corner of Anatolia.</p>
       </div>
       <span class="trip-card__arrow">→</span>
     </a>
@@ -35,57 +37,84 @@ layout: page
         </svg>
       </div>
       <div class="trip-card__body">
-        <h2 class="trip-card__title">Dünya</h2>
-        <p class="trip-card__stat"><strong>5</strong> ülke</p>
-        <p class="trip-card__desc">Sınırların ötesine adım adım.</p>
+        <h2 class="trip-card__title">The World</h2>
+        <p class="trip-card__stat"><strong>9</strong> countries</p>
+        <p class="trip-card__desc">One step beyond the borders.</p>
       </div>
       <span class="trip-card__arrow">→</span>
     </a>
   </div>
 
   <section class="trip-section" id="turkiye">
-    <h2>🇹🇷 Türkiye</h2>
-    <p>81 ilin 47'sinde en az 1 gün bulundum. Haritadaki renkli iller gezdiğim yerleri gösteriyor.</p>
-    <img src="/assets/images/20230408.png" alt="Türkiye'de gezdiğim iller haritası — 47/81" />
+    <h2>🇹🇷 Turkey <small>47 / 81 provinces</small></h2>
+    <img src="/assets/images/20230408.png" alt="Map of the provinces I've visited in Turkey — 47/81" />
 
   </section>
 
   <section class="trip-section" id="dunya">
-    <h2>🌍 Dünya</h2>
+    <h2>🌍 The World <small>9 countries</small></h2>
     <div class="trip-countries">
       <div class="trip-country-card">
         <span class="trip-country-card__flag">&#x1F1E8;&#x1F1FF;</span>
         <div>
-          <h3>Çekya</h3>
-          <p>Prag</p>
+          <h3>Czechia</h3>
+          <p>Prague</p>
+        </div>
+      </div>
+      <div class="trip-country-card">
+        <span class="trip-country-card__flag">🇦🇹</span>
+        <div>
+          <h3>Austria</h3>
+          <p>Vienna</p>
+        </div>
+      </div>
+      <div class="trip-country-card">
+        <span class="trip-country-card__flag">🇭🇺</span>
+        <div>
+          <h3>Hungary</h3>
+          <p>Budapest</p>
         </div>
       </div>
       <div class="trip-country-card">
         <span class="trip-country-card__flag">🇩🇪</span>
         <div>
-          <h3>Almanya</h3>
+          <h3>Germany</h3>
           <p>Berlin</p>
         </div>
       </div>
       <div class="trip-country-card">
         <span class="trip-country-card__flag">🇳🇱</span>
         <div>
-          <h3>Hollanda</h3>
+          <h3>Netherlands</h3>
           <p>Amsterdam</p>
         </div>
       </div>
       <div class="trip-country-card">
         <span class="trip-country-card__flag">🇧🇪</span>
         <div>
-          <h3>Belçika</h3>
-          <p>Brüksel</p>
+          <h3>Belgium</h3>
+          <p>Brussels</p>
+        </div>
+      </div>
+      <div class="trip-country-card">
+        <span class="trip-country-card__flag">🇩🇰</span>
+        <div>
+          <h3>Denmark</h3>
+          <p>Copenhagen</p>
+        </div>
+      </div>
+      <div class="trip-country-card">
+        <span class="trip-country-card__flag">🇳🇴</span>
+        <div>
+          <h3>Norway</h3>
+          <p>Oslo</p>
         </div>
       </div>
       <div class="trip-country-card">
         <span class="trip-country-card__flag">🇸🇪</span>
         <div>
-          <h3>İsveç</h3>
-          <p>Stockholm</p>
+          <h3>Sweden</h3>
+          <p>Stockholm ×2</p>
         </div>
       </div>
     </div>

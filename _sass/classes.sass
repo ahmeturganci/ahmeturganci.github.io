@@ -135,39 +135,38 @@
   p
     text-align: left
 
-.trip-intro
-  max-width: 58ch
-  color: reduce(70)
-  line-height: 1.7
-  margin: 0 0 2rem
+.trip-header
+  margin-bottom: 1.25rem
+
+  h1
+    margin: 0
+    font-size: 1.6em
 
 .trip-sections
   display: grid
   grid-template-columns: repeat(2, 1fr)
-  gap: 1.25rem
+  gap: .75rem
 
 .trip-card
   display: flex
   align-items: center
-  gap: 1.2rem
-  padding: 1.4rem 1.5rem
-  border-radius: 1rem
+  gap: .8rem
+  padding: 1rem 1.1rem
+  border-radius: .4rem
   border: 1px solid reduce(12)
   color: inherit
-  background: rgba($light, .97)
-  box-shadow: 0 .4rem 1.2rem rgba($dark, .05)
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease
+  background: rgba($light, .8)
+  transition: transform .2s ease, border-color .2s ease
 
   &:hover
     transform: translateY(-3px)
-    box-shadow: 0 .8rem 2rem rgba($dark, .1)
     border-color: rgba($link-color, .35)
     text-decoration: none
 
 .trip-card__icon
   flex-shrink: 0
-  width: 3.4rem
-  height: 3.4rem
+  width: 2.5rem
+  height: 2.5rem
   display: flex
   align-items: center
   justify-content: center
@@ -175,8 +174,8 @@
   color: $light
 
   svg
-    width: 1.8rem
-    height: 1.8rem
+    width: 1.4rem
+    height: 1.4rem
 
 .trip-card--turkiye .trip-card__icon
   background: linear-gradient(135deg, #e74c3c, #c0392b)
@@ -203,9 +202,7 @@
     font-size: 1.15em
 
 .trip-card__desc
-  margin: .3rem 0 0
-  font-size: .82em
-  color: reduce(50)
+  display: none
 
 .trip-card__arrow
   font-size: 1.4em
@@ -219,29 +216,28 @@
 
 // Trip detail sections
 .trip-section
-  padding-top: 2rem
-  margin-top: 2rem
+  padding-top: 1.5rem
+  margin-top: 1.5rem
   border-top: 1px solid reduce(10)
   scroll-margin-top: 2rem
 
-  h2
-    font-size: 1.4em
-    margin: 0 0 .6rem
+.trip-section h2
+  font-size: 1.3em
+  margin: 0 0 .75rem
+
+  small
+    color: reduce(55)
+    font-size: .65em
+    font-weight: normal
 
   h3
     font-size: 1.05em
     margin: 1.5rem 0 .5rem
 
-  > p
-    max-width: 58ch
-    color: reduce(72)
-    line-height: 1.65
-    margin: 0 0 .75rem
-
   img
     border-radius: .75rem
     box-shadow: 0 .4rem 1.5rem rgba($dark, .08)
-    margin: .5rem 0
+      margin: 0
 
 .trip-provinces
   display: flex
@@ -267,26 +263,24 @@
   display: grid
   grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr))
   gap: 1rem
-  margin: .75rem 0
+  margin: 1rem 0
 
 .trip-country-card
   display: flex
   align-items: center
   gap: 1rem
-  padding: 1.1rem 1.3rem
-  border-radius: .85rem
+  padding: .8rem 1rem
+  border-radius: .4rem
   border: 1px solid reduce(10)
-  background: rgba($light, .97)
-  box-shadow: 0 .25rem .8rem rgba($dark, .04)
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease
+  background: rgba($light, .8)
+  transition: transform .18s ease, border-color .18s ease
 
   &:hover
     transform: translateY(-2px)
-    box-shadow: 0 .5rem 1.5rem rgba($dark, .08)
     border-color: rgba($link-color, .3)
 
 .trip-country-card__flag
-  font-size: 2.4em
+  font-size: 1.8em
   line-height: 1
 
 .trip-country-card h3
